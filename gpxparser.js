@@ -56,7 +56,6 @@ function GPXParser(xmlDoc, map) {
     this.map = map;
 }
 
-
 GPXParser.prototype.getTrackSegment = function(trackSegmentElement) {
     var trackpointElements = trackSegmentElement.getElementsByTagName("trkpt");
     var trackPoints = [];
