@@ -64,7 +64,7 @@ GPXParser.prototype.getTrackSegment = function(trackSegmentElement) {
         var trackpointElement = trackpointElements[i];
         var lng = parseFloat(trackpointElement.getAttribute("lon"));
         var lat = parseFloat(trackpointElement.getAttribute("lat"));
-        var point = {latlon: {lat: lat, lng: lng}};
+        var point = {lat: lat, lng: lng};
 
         var elevationElements = trackpointElement.getElementsByTagName("ele");
         if (elevationElements.length > 0) {
